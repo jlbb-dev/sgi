@@ -1,0 +1,9 @@
+class CreateTecnics < ActiveRecord::Migration[5.2]
+  def change
+    create_table :tecnics do |t|
+      t.string :name
+
+      t.timestamps
+    end
+  end
+end

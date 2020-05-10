@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  pccode: MyString
+  observation: MyText
+  area: one
+  repair_type: one
+
+two:
+  date: MyString
+  pccode: MyString
+  observation: MyText
+  area: two
+  repair_type: two

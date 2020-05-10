@@ -1,0 +1,2 @@
+module RepairHistoriesHelper
+end

@@ -1,0 +1,2 @@
+class ServiceMode < ApplicationRecord
+end

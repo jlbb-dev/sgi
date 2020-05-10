@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @repair_history.date %>
+</p>
+
+<p>
+  <strong>Pccode:</strong>
+  <%= @repair_history.pccode %>
+</p>
+
+<p>
+  <strong>Observation:</strong>
+  <%= @repair_history.observation %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @repair_history.area %>
+</p>
+
+<p>
+  <strong>Repair type:</strong>
+  <%= @repair_history.repair_type %>
+</p>
+
+<%= link_to 'Edit', edit_repair_history_path(@repair_history) %> |
+<%= link_to 'Back', repair_histories_path %>

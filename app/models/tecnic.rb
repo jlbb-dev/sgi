@@ -1,0 +1,2 @@
+class Tecnic < ApplicationRecord
+end

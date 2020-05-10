@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  tecnic: one
+  area: one
+  service_area: one
+  service_mode: one
+  service_type: one
+
+two:
+  date: MyString
+  tecnic: two
+  area: two
+  service_area: two
+  service_mode: two
+  service_type: two
