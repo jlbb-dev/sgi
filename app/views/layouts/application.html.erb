@@ -9,7 +9,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+ <body class="">
+
+    <div class="page">
+     <% if user_signed_in? %>
+    <%= render "menu/top" %>
+     <% end %>
     <%= yield %>
+     <% if user_signed_in? %>
+     <%= render "menu/bot" %>
+       <% end %>
+     </div>
   </body>
 </html>
