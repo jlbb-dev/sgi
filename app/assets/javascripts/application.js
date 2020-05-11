@@ -10,15 +10,14 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require tabler
-//= require tabler.plugins
-//= require Chart.min
-//= require jquery
-//= require datatables
+
 //= require rails-ujs
-//= require chartkick
-//= require Chart.bundle
+
+//= require activestorage
+//= require tabler
 //= require bootstrap-datepicker
+//= require custom
+
 //= require turbolinks
 //= require datatables
 //= require_tree .

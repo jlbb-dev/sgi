@@ -28,7 +28,7 @@ class ServicesController < ApplicationController
 
     respond_to do |format|
       if @service.save
-        format.html { redirect_to @service, notice: 'Service was successfully created.' }
+        format.html { redirect_to services_url, notice: 'Servicio creado correctamente.' }
         format.json { render :show, status: :created, location: @service }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ServicesController < ApplicationController
   def update
     respond_to do |format|
       if @service.update(service_params)
-        format.html { redirect_to @service, notice: 'Service was successfully updated.' }
+        format.html { redirect_to services_url, notice: 'Service was successfully updated.' }
         format.json { render :show, status: :ok, location: @service }
       else
         format.html { render :edit }
@@ -69,6 +69,6 @@ class ServicesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def service_params
-      params.require(:service).permit(:date, :tecnic_id, :area_id, :service_area_id, :service_mode_id, :service_type_id)
+      params.require(:service).permit(:date, :observation,:tecnic_id, :area_id, :service_area_id, :service_mode_id, :service_type_id)
     end
 end

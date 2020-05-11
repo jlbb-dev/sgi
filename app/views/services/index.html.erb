@@ -1,16 +1,30 @@
+
+
 <p id="notice"><%= notice %></p>
+<div class="my-3 my-md-5">
+<div class="container">
+          <div class="row row-cards row-deck">          
+ <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Servicios Realizados</h3>
+                  </div>
+                  <div class="table-responsive">
 
-<h1>Services</h1>
 
-<table>
+<table id="dttb" class="table table-hover table-outline table-vcenter text-nowrap card-table">
   <thead>
     <tr>
-      <th>Date</th>
-      <th>Tecnic</th>
+      <th>Fecha</th>
+      <th>Tecnico</th>
       <th>Area</th>
-      <th>Service area</th>
-      <th>Service mode</th>
-      <th>Service type</th>
+      <th>Area de Servicio</th>
+      <th>Tipo de servicio</th>
+      <th>Clasificacion De Servicio</th>
+       <th>Observacion</th>
+<th></th>
+      <th></th>
+       <th></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,19 +33,26 @@
     <% @services.each do |service| %>
       <tr>
         <td><%= service.date %></td>
-        <td><%= service.tecnic %></td>
-        <td><%= service.area %></td>
-        <td><%= service.service_area %></td>
-        <td><%= service.service_mode %></td>
-        <td><%= service.service_type %></td>
-        <td><%= link_to 'Show', service %></td>
-        <td><%= link_to 'Edit', edit_service_path(service) %></td>
-        <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= service.tecnic.name %></td>
+        <td><%= service.area.name %></td>
+        <td><%= service.service_area.name %></td>
+        <td><%= service.service_mode.name %></td>
+        <td><%= service.service_type.name %></td>
+        <td><%= service.observation %></td>
+        <td><%= link_to 'Ver', service %></td>
+        <td><%= link_to 'Editar', edit_service_path(service) %></td>
+        <td><%= link_to 'Borrar', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+  
+                      </div>
+                </div>
+              </div>
+ </div>
+              </div>
+
+ </div>
 
 <br>
-
-<%= link_to 'New Service', new_service_path %>
