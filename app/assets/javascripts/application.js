@@ -12,13 +12,13 @@
 //
 
 //= require rails-ujs
-
+//= require jquery.turbolinks
 //= require activestorage
 //= require tabler
 //= require bootstrap-datepicker
+//= require datatables
+
 //= require custom
 
-//= require turbolinks
-//= require datatables
 //= require_tree .
 

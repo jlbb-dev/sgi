@@ -10,6 +10,7 @@ Area.create(name: 'Fiscalia');
 Area.create(name: 'Abogado Particular');
 Area.create(name: 'Defensoria');
 
+ServiceArea.create(name:'No especifica');
 ServiceArea.create(name:'Juzgado 1ra Instancia Civil - Sria 7');
 ServiceArea.create(name:'Juzgado 1ra Instancia Civil - Sria 6');
 ServiceArea.create(name:'Juzgado 1ra Instancia Civil - Sria 5');

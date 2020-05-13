@@ -2,16 +2,17 @@
   $(document).ready(function(){
     $('.datepicker').datepicker();
   });
+
   $(document).ready(function() {
   $('#dttb').dataTable({
-     "bFilter": false,
-     dom: 'rt<"row"<"col-sm-4"l><"col-sm-4"i><"col-sm-4"p>>',
+  
+
      "language": {
     "sProcessing":     "Procesando...",
     "sLengthMenu":     "Mostrar _MENU_ registros",
     "sZeroRecords":    "No se encontraron resultados",
     "sEmptyTable":     "Ningún dato disponible en esta tabla",
-    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+    "sInfo":           "Registros del _START_ al _END_ de un total de _TOTAL_ registros",
     "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
     "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
     "sInfoPostFix":    "",
@@ -37,3 +38,19 @@
 
   });
 });
+
+ $(function(){
+    $('#complaint_selector1').on('change',
+    function(){
+     if ($('#complaint_selector1').find('option:selected').text() == "Poder Judicial")
+      {
+      
+        $('#complaint_selector2').show();
+      }
+     else
+      {
+    
+        $('#complaint_selector2').hide();
+      }
+    })
+  });

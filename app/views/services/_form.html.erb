@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 <div class="my-3 my-md-5">
           <div class="container">
             <div class="row">
@@ -33,19 +40,22 @@
               <%= form.select :tecnic_id, Tecnic.all.collect{ |s| [ s.name , s.id ] }, {},{ :class => 'form-control' }%>
 
             </div></div>
-              <div class="col-12">
-            <div class="form-group">
-              <label class="form-label">Area Solicitante</label>
-              <%= form.select :service_area_id, ServiceArea.all.collect{ |s| [ s.name , s.id ] },{},{ :class => 'form-control', :id => 'complaint_selector'}%>
 
-            </div></div>
-
-            <div class="col-12" id="complaint_selector2">
+             <div class="col-12" id="complaint_selector1">
             <div class="form-group">
               <label class="form-label">Juzgado Solicitante</label>
-              <%= form.select :area_id, Area.all.collect{ |s| [ s.name , s.id ] }, {},{ :class => 'form-control', :id => 'complaint_selector2'}%>
+              <%= form.select :area_id, Area.all.collect{ |s| [ s.name , s.id ] }, {},{ :class => 'form-control', :id => 'complaint_selector1'}%>
 
             </div></div>
+
+              <div class="col-12" id="complaint_selector2">
+            <div class="form-group">
+              <label class="form-label">Area Solicitante</label>
+              <%= form.select :service_area_id, ServiceArea.all.collect{ |s| [ s.name , s.id ] },{},{ :class => 'form-control', :id => 'complaint_selector2'}%>
+
+            </div></div>
+
+           
           
             <div class="col-12">
             <div class="form-group">

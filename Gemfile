@@ -30,7 +30,7 @@ gem 'bootstrap-datepicker-rails'
 gem 'devise'
 gem 'jquery-rails'
 gem 'jquery-datatables'
-
+gem 'jquery-turbolinks'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

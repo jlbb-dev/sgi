@@ -25,7 +25,9 @@ class ServicesController < ApplicationController
   # POST /services.json
   def create
     @service = Service.new(service_params)
-
+    if @service.area_id != 1
+          @service.service_area_id= 1
+    end
     respond_to do |format|
       if @service.save
         format.html { redirect_to services_url, notice: 'Servicio creado correctamente.' }
