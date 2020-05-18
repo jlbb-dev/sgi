@@ -9,6 +9,18 @@ class ServicesController < ApplicationController
 
   # GET /services/1
   # GET /services/1.json
+  def chart
+  end
+  
+ def chart1
+  start_date = params[:start_date]
+  end_date = params[:end_date]
+  @ha = Service.joins(:tecnic).abc(start_date,end_date).group(:name).count(:id)
+
+  respond_to do |format|               
+    format.js
+  end        
+end 
   def show
   end
 

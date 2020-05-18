@@ -17,7 +17,9 @@
 //= require tabler
 //= require bootstrap-datepicker
 //= require datatables
-
+//= require chartkick
+//= require Chart.bundle
+//= require chartjs-plugin-datalabels
 //= require custom
 
 //= require_tree .

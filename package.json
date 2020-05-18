@@ -1,5 +1,7 @@
 {
   "name": "infapp",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "chartjs-plugin-datalabels": "^0.7.0"
+  }
 }

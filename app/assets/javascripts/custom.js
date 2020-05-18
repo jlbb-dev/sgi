@@ -1,6 +1,9 @@
   
   $(document).ready(function(){
-    $('.datepicker').datepicker();
+    $('.datepicker').datepicker({
+       todayHighlight: true, 
+    format: 'dd/mm/yyyy'
+    });
   });
 
   $(document).ready(function() {

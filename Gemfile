@@ -31,6 +31,9 @@ gem 'devise'
 gem 'jquery-rails'
 gem 'jquery-datatables'
 gem 'jquery-turbolinks'
+
+gem "chartkick"
+gem 'groupdate'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

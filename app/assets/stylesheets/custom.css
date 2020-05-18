@@ -8,6 +8,19 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ .mychart { 
+  height: 300px; 
+  text-align: center; 
+  olor: #999; 
+  line-height: 300px; 
+  font-size: 14px; 
+  font-family: Lucida Grande, Lucida Sans Unicode, Verdana, Arial, Helvetica, 
+  sans-serif; 
+  margin-bottom: 20px;
+
+
+    }
 :root {
   --blue: #467fcf;
   --indigo: #6574cd;
