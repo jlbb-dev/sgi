@@ -1,14 +1,34 @@
-  
+$(document).ready(function() {
+  $('#calendar2').fullCalendar({
+    header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,basicWeek,agendaDay'
+    }, eventSources: ['/events.json'] });
+});
+
+
+
   $(document).ready(function(){
     $('.datepicker').datepicker({
        todayHighlight: true, 
     format: 'dd/mm/yyyy'
+    
     });
   });
 
   $(document).ready(function() {
   $('#dttb').dataTable({
-  
+dom:"<'row'<'col-sm-12 col-md-6'l><'col-sm-12 col-md-6'f>>" +
+"<'row'<'col-sm-12'tr>>" +
+"<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>"+
+"<'row'<'col-sm-4'><'col-sm-4'B><'col-sm-4'>>"
+    
+
+,
+buttons: [
+'copy', 'csv', 'excel', 'pdf', 'print'
+],
 
      "language": {
     "sProcessing":     "Procesando...",
@@ -35,6 +55,8 @@
     },
     "buttons": {
         "copy": "Copiar",
+        "csv": "Exportar Excel",
+         "print": "Imprimir/PDF",
         "colvis": "Visibilidad"
     }
 }

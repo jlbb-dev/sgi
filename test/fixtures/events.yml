@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyText
+  start: 2020-05-20
+  end: 2020-05-20
+
+two:
+  title: MyText
+  start: 2020-05-20
+  end: 2020-05-20

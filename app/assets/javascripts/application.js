@@ -13,6 +13,7 @@
 
 //= require rails-ujs
 //= require jquery.turbolinks
+
 //= require activestorage
 //= require tabler
 //= require bootstrap-datepicker
@@ -20,6 +21,7 @@
 //= require chartkick
 //= require Chart.bundle
 //= require chartjs-plugin-datalabels
+//= require calendar
 //= require custom
 
 //= require_tree .
