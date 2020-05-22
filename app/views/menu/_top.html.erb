@@ -91,6 +91,14 @@
                     <a href="<%=welcome_index_path%>" class="nav-link active"><i class="fe fe-home"></i> Home</a>
                   </li>
                   <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-calendar"></i> Eventos</a>
+                    <div class="dropdown-menu dropdown-menu-arrow">
+                      <a href="<%=new_event_path%>" class="dropdown-item"> Registrar evento</a>
+                      <a href="<%=events_path%>" class="dropdown-item"> Ver Calendario de eventos</a>
+                    
+                    </div>
+                  </li>
+                  <li class="nav-item">
                     <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-box"></i> Servicios</a>
                     <div class="dropdown-menu dropdown-menu-arrow">
                       <a href="<%=new_service_path%>" class="dropdown-item"> Registrar Servicio</a>
@@ -98,18 +106,18 @@
                     
                     </div>
                   </li>
-                  <li class="nav-item">
-                    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-box"></i> Juzgados</a>
+                 <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-box"></i> Reparaciones</a>
                     <div class="dropdown-menu dropdown-menu-arrow">
-                      <a href="<%=new_area_path%>" class="dropdown-item"> Registrar Juzgado</a>
-                      <a href="<%=areas_path%>" class="dropdown-item"> Ver Juzgados</a>
+                      <a href="<%=new_repair_history_path%>" class="dropdown-item"> Registrar reparacion</a>
+                      <a href="<%=repair_histories_path%>" class="dropdown-item"> Ver Reparaciones</a>
                     
                     </div>
                   </li>
                   <li class="nav-item">
                     <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-box"></i> Reportes</a>
                     <div class="dropdown-menu dropdown-menu-arrow">
-                      <a href="<%=new_area_path%>" class="dropdown-item"> Registrar Juzgado</a>
+                      <a href="<%=services_chart_path%>" class="dropdown-item"> Cantidad de servicios por funcionario</a>
                       <a href="<%=areas_path%>" class="dropdown-item"> Ver Juzgados</a>
                     
                     </div>

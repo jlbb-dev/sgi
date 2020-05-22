@@ -28,7 +28,7 @@ class RepairHistoriesController < ApplicationController
 
     respond_to do |format|
       if @repair_history.save
-        format.html { redirect_to @repair_history, notice: 'Repair history was successfully created.' }
+        format.html { redirect_to repair_histories_url, notice: 'Repair history was successfully created.' }
         format.json { render :show, status: :created, location: @repair_history }
       else
         format.html { render :new }
@@ -69,6 +69,6 @@ class RepairHistoriesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def repair_history_params
-      params.require(:repair_history).permit(:date, :pccode, :observation, :area_id, :repair_type_id)
+      params.require(:repair_history).permit(:date, :pccode, :observation,:tecnic_id, :service_area_id, :repair_type_id)
     end
 end

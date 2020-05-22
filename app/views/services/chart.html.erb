@@ -32,7 +32,7 @@
  	<div class="form-group">
  		<div class="input-group">
 	
-  <%= text_field_tag :start_date,nil,class: 'form-control datepicker',placeholder:'Desde' %>
+  <%= text_field :start_date,nil,class: 'form-control datepicker',placeholder:'Desde' %>
  
 <span class="input-group-prepend">
                             <span class="input-group-text"><i class="fe fe-calendar"></i></span>
@@ -40,7 +40,7 @@
 
  
 
-  <%= text_field_tag :end_date,nil,class: 'form-control datepicker',placeholder:'Hasta'  %>
+  <%= text_field :end_date,nil,class: 'form-control datepicker',placeholder:'Hasta'  %>
  <span class="input-group-append">
                             <%= submit_tag 'Generar chart',class: 'btn btn-primary ml-auto' %>
                           </span>

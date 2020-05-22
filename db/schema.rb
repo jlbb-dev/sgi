@@ -33,12 +33,14 @@ ActiveRecord::Schema.define(version: 2020_05_20_154330) do
     t.string "date"
     t.string "pccode"
     t.text "observation"
-    t.bigint "area_id"
+    t.bigint "tecnic_id"
+    t.bigint "service_area_id"
     t.bigint "repair_type_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["area_id"], name: "index_repair_histories_on_area_id"
     t.index ["repair_type_id"], name: "index_repair_histories_on_repair_type_id"
+    t.index ["service_area_id"], name: "index_repair_histories_on_service_area_id"
+    t.index ["tecnic_id"], name: "index_repair_histories_on_tecnic_id"
   end
 
   create_table "repair_types", force: :cascade do |t|
@@ -100,8 +102,9 @@ ActiveRecord::Schema.define(version: 2020_05_20_154330) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "repair_histories", "areas"
   add_foreign_key "repair_histories", "repair_types"
+  add_foreign_key "repair_histories", "service_areas"
+  add_foreign_key "repair_histories", "tecnics"
   add_foreign_key "services", "areas"
   add_foreign_key "services", "service_areas"
   add_foreign_key "services", "service_modes"

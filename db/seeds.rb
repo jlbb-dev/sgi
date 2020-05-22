@@ -27,6 +27,7 @@ ServiceMode.create(name:'Remoto');
 Tecnic.create(name: 'Jose Boronowski');
 Tecnic.create(name: 'Jose Boronowski2');
 
+
 Service.create(date: '11/05/2020',tecnic_id: 1, area_id: 1, service_area_id: 1,service_mode_id: 1,service_type_id: 1);
 
 Service.create(date: '12/05/2020',tecnic_id: 1, area_id: 2, service_area_id: 2,service_mode_id: 2,service_type_id: 1);
