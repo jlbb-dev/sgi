@@ -68,7 +68,7 @@ ActiveRecord::Schema.define(version: 2020_05_20_154330) do
   end
 
   create_table "services", force: :cascade do |t|
-    t.string "date"
+    t.date "date"
     t.string "observation"
     t.bigint "tecnic_id"
     t.bigint "area_id"

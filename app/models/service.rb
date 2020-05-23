@@ -5,6 +5,6 @@ class Service < ApplicationRecord
   belongs_to :service_mode
   belongs_to :service_type
   scope :abc, ->(start_date, end_date) {
-  where("services.created_at >= '#{start_date}' and services.created_at <= '#{end_date}'")
+  where("services.date >= '#{start_date}' and services.date <= '#{end_date}'")
 } 
 end

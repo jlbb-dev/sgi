@@ -1,7 +1,7 @@
 class CreateServices < ActiveRecord::Migration[5.2]
   def change
     create_table :services do |t|
-      t.string :date
+      t.date :date
       t.string :observation
       t.references :tecnic, index: true, foreign_key: true
       t.references :area, index: true, foreign_key: true
