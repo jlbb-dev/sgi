@@ -27,6 +27,30 @@ ServiceMode.create(name:'Remoto');
 Tecnic.create(name: 'Jose Boronowski');
 Tecnic.create(name: 'Jose Boronowski2');
 
+RepairType.create(name:'Cambio Placa Madre');
+RepairType.create(name:'Cambio Procesador');
+RepairType.create(name:'Cambio Memoria');
+RepairType.create(name:'Cambio Fuente');
+
+RepairHistory.create(date: '11/05/2020',pccode: '0001515', observation: 'sin observacion',tecnic_id: 1, service_area_id: 1,repair_type_id: 1);
+
+RepairHistory.create(date: '11/05/2020',pccode: '0001515', observation:'sin observacion',tecnic_id: 1, service_area_id: 1,repair_type_id: 2);
+
+RepairHistory.create(date: '11/05/2020',pccode: '0001515', observation: 'sin observacion',tecnic_id: 1, service_area_id: 1,repair_type_id: 3);
+
+RepairHistory.create(date: '11/05/2020',pccode: '0001515', observation: 'sin observacion',tecnic_id: 1, service_area_id: 1,repair_type_id: 4);
+
+RepairHistory.create(date: '11/05/2020',pccode: '0001515', observation: 'sin observacion',tecnic_id: 1, service_area_id: 1,repair_type_id: 1);
+
+RepairHistory.create(date: '11/05/2020',pccode: '0001515', observation: 'sin observacion',tecnic_id: 1, service_area_id: 1,repair_type_id: 1);
+
+RepairHistory.create(date: '11/05/2020',pccode:'0001515', observation: 'sin observacion',tecnic_id: 1, service_area_id: 1,repair_type_id: 2);
+
+RepairHistory.create(date: '11/05/2020',pccode: '0001515',observation: 'sin observacion',tecnic_id: 1, service_area_id: 1,repair_type_id: 3);
+
+RepairHistory.create(date: '11/05/2020',pccode:'0001515', observation: 'sin observacion',tecnic_id: 1, service_area_id: 1,repair_type_id: 4);
+
+RepairHistory.create(date: '11/05/2020',pccode: '0001515',observation: 'sin observacion',tecnic_id: 1, service_area_id: 1,repair_type_id: 1);
 
 Service.create(date: '11/05/2020',tecnic_id: 1, area_id: 1, service_area_id: 1,service_mode_id: 1,service_type_id: 1);
 

@@ -20,7 +20,8 @@
 //= require datatables
 //= require chartkick
 //= require Chart.bundle
-//= require chartjs-plugin-datalabels
+
+//= require chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels
 //= require calendar
 //= require custom
 
