@@ -17,10 +17,10 @@
 //= require activestorage
 //= require tabler
 //= require bootstrap-datepicker
-//= require datatables
+
 //= require chartkick
 //= require Chart.bundle
-
+//= require datatables
 //= require chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels
 //= require calendar
 //= require custom
