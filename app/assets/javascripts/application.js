@@ -11,7 +11,6 @@
 // about supported directives.
 //
 
-//= require jquery.turbolinks
 //= require jquery
 //= require jquery_ujs
 //= require activestorage

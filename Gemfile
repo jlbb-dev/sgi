@@ -30,7 +30,6 @@ gem 'bootstrap-datepicker-rails'
 gem 'devise'
 gem 'jquery-rails'
 gem 'jquery-datatables'
-gem 'jquery-turbolinks'
 gem 'fullcalendar'
 gem 'momentjs-rails'
 gem "chartkick"
