@@ -1,6 +1,6 @@
 class TecnicsController < ApplicationController
   before_action :set_tecnic, only: [:show, :edit, :update, :destroy]
-
+ before_action :authenticate_user!
   # GET /tecnics
   # GET /tecnics.json
   def index

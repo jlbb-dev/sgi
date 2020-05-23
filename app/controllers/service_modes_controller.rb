@@ -1,6 +1,6 @@
 class ServiceModesController < ApplicationController
   before_action :set_service_mode, only: [:show, :edit, :update, :destroy]
-
+ before_action :authenticate_user!
   # GET /service_modes
   # GET /service_modes.json
   def index

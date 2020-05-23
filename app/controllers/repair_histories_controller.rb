@@ -1,6 +1,6 @@
 class RepairHistoriesController < ApplicationController
   before_action :set_repair_history, only: [:show, :edit, :update, :destroy]
-
+ before_action :authenticate_user!
   # GET /repair_histories
   # GET /repair_histories.json
   def index

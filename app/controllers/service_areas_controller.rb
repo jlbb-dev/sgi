@@ -1,6 +1,6 @@
 class ServiceAreasController < ApplicationController
   before_action :set_service_area, only: [:show, :edit, :update, :destroy]
-
+ before_action :authenticate_user!
   # GET /service_areas
   # GET /service_areas.json
   def index

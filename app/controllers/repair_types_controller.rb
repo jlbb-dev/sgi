@@ -1,6 +1,6 @@
 class RepairTypesController < ApplicationController
   before_action :set_repair_type, only: [:show, :edit, :update, :destroy]
-
+ before_action :authenticate_user!
   # GET /repair_types
   # GET /repair_types.json
   def index
