@@ -1,0 +1,60 @@
+
+<div class="my-3 my-md-5">
+          <div class="container">
+            <div class="page-header">
+              <h1 class="page-title">
+               
+              </h1>
+            </div>
+
+  <div class="row row-cards">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Modos de Servicio</h3>
+                  </div>
+                  <div class="card-body">
+                  
+<%= form_tag chart_mode_js_services_path(:start_date => @start_date, :end_date => @end_date  ),method: :get , :remote => true do %>
+ <div class="col-12">
+ 	<div class="form-group">
+ 		<div class="input-group">
+	
+  <%= text_field :start_date,nil,class: 'form-control datepicker',placeholder:'Desde' %>
+ 
+<span class="input-group-prepend">
+                            <span class="input-group-text"><i class="fe fe-calendar"></i></span>
+                          </span>
+
+ 
+
+  <%= text_field :end_date,nil,class: 'form-control datepicker',placeholder:'Hasta'  %>
+ <span class="input-group-append">
+                            <%= submit_tag 'Generar chart',class: 'btn btn-primary ml-auto' %>
+                          </span>
+
+   </div>
+
+   </div>
+
+   </div>
+
+<% end %>
+
+<div id = "div_id">
+       <!-- This Div is used to render result -->
+     </div>
+
+ </div>
+                </div>
+             
+              </div>
+            
+           
+           
+              
+            </div>
+          </div>
+           </div>
+
+

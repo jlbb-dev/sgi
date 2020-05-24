@@ -2,9 +2,11 @@ Rails.application.routes.draw do
   resources :events
   devise_for :users
   get 'services/chart'
+   get 'services/chart_mode'
   resources :services do
     collection do
       get 'chart1'
+      get 'chart_mode_js'
     end
   end  
 

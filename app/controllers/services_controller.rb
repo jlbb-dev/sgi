@@ -5,13 +5,24 @@ class ServicesController < ApplicationController
   # GET /services.json
   def index
     @services = Service.all
-  end
+    end
 
   # GET /services/1
   # GET /services/1.json
   def chart
   end
-  
+  def chart_mode
+    
+  end
+  def chart_mode_js
+      start_date = params[:start_date]
+      end_date = params[:end_date]
+      @ha = Service.joins(:service_mode).abc(start_date,end_date).group(:name).count(:id)
+        respond_to do |format|               
+    format.js
+  end      
+  end
+
  def chart1
   start_date = params[:start_date]
   end_date = params[:end_date]
