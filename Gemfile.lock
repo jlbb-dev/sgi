@@ -69,7 +69,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
-    chartkick (3.3.1)
+    chartkick (3.4.0)
     childprocess (3.0.0)
     chromedriver-helper (2.1.1)
       archive-zip (~> 0.10)
@@ -85,6 +85,7 @@ GEM
     duktape (2.3.0.0)
     erubi (1.9.0)
     execjs (2.7.0)
+    ffi (1.12.2)
     ffi (1.12.2-x64-mingw32)
     fullcalendar (3.9.0)
       momentjs-rails (~> 2.20.1)
@@ -116,11 +117,15 @@ GEM
     minitest (5.14.0)
     momentjs-rails (2.20.1)
       railties (>= 3.1)
+    msgpack (1.3.3)
     msgpack (1.3.3-x64-mingw32)
     nio4r (2.5.2)
+    nokogiri (1.10.9)
+      mini_portile2 (~> 2.4.0)
     nokogiri (1.10.9-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    pg (1.2.3)
     pg (1.2.3-x64-mingw32)
     popper_js (1.16.0)
     public_suffix (4.0.5)
@@ -210,6 +215,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
